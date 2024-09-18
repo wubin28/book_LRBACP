@@ -19,15 +19,16 @@ public class OptionalMisuseExample {
   }
 
   public static void main(String[] args) {
-    try {
-      printName(1); // 这会正常工作
-      printName(2); // 这会抛出 NoSuchElementException
-    } catch (Exception e) {
-      System.out.println(
-          "An exception occurred: " + e.getClass().getSimpleName() + " - " + e.getMessage());
-    }
+    printName(1); // 这会正常工作
+    printName(2); // 这会抛出 NoSuchElementException
   }
 }
-// Output:
-// Name: Alice
-// An exception occurred: NoSuchElementException - No value present
+// Output of './gradlew run':
+// > Task :app:run FAILED
+// Exception in thread "main" Name: Alice
+// java.util.NoSuchElementException: No value present
+//         at java.base/java.util.Optional.get(Optional.java:143)
+//         at org.example.OptionalMisuseExample.printName(OptionalMisuseExample.java:18)
+//         at org.example.OptionalMisuseExample.main(OptionalMisuseExample.java:23)
+// 
+// FAILURE: Build failed with an exception.
