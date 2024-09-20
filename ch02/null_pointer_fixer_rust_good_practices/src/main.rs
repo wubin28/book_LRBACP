@@ -52,7 +52,10 @@ fn main() {
 // Name: Alice
 // No name found for id: 2
 // Name: Alice
+// Name: Alice
+// Name: Unknown
 // Name: No name found for id: 2
 // Name: Alice
-// thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', main.rs:31:39
+// thread 'main' panicked at src/main.rs:33:39:
+// called `Option::unwrap()` on a `None` value
 // note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
