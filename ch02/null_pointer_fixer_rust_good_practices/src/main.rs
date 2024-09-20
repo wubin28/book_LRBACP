@@ -44,7 +44,7 @@ fn main() {
     print_name_by_unwrap_or(2); // 这会打印未找到名字的消息
 
     print_name_by_unwrap_not_recommended(1); // 这会打印名字
-    print_name_by_unwrap_not_recommended(2); // 这会打印未找到名字的消息
+    print_name_by_unwrap_not_recommended(2); // 这会触发panic
 }
 // Output:
 // Name: Alice
