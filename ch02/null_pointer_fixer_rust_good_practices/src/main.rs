@@ -23,8 +23,10 @@ fn print_name_by_if_let(id: i32) {
 }
 
 fn print_name_by_unwrap_or(id: i32) {
-    let name = get_name(id).unwrap_or_else(|| format!("No name found for id: {}", id));
-    println!("Name: {}", name);
+    let name_unknown = get_name(id).unwrap_or(String::from("Unknown"));
+    let name_for_id = get_name(id).unwrap_or_else(|| format!("No name found for id: {}", id));
+    println!("Name: {}", name_unknown);
+    println!("Name: {}", name_for_id);
 }
 
 fn print_name_by_unwrap_not_recommended(id: i32) {
