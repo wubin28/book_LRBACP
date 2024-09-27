@@ -1,0 +1,6 @@
+[package]
+name = "shadow_type_amnesia"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
