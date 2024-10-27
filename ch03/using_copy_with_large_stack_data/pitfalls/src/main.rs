@@ -1,4 +1,4 @@
-// 为MyStruct结构体添加了三个派生的trait：
+// 为MyStruct结构体添加了两个派生的trait：
 // Clone：允许通过显式调用.clone()方法来复制结构体。
 // Copy：允许结构体在赋值或传参时执行浅拷贝，而不移动所有权。
 #[derive(Clone, Copy)]
