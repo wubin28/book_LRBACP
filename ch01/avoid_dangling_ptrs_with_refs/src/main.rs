@@ -1,6 +1,4 @@
 fn main() {
-    println!("Rust 避免悬空指针示例开始运行...");
-
     // 声明名为reference的变量，但暂不初始化
     let reference;
 
