@@ -2,8 +2,7 @@ fn main() {
     // 声明名为reference的变量，但暂不初始化
     let reference;
 
-    {
-        // 开始一个新作用域
+    { // 开始一个新作用域
         // 绑定类型为Box<i32>的智能指针smart_ptr，存储整数值55，Box在堆上分配内存
         let smart_ptr = Box::new(55);
         // 变量reference的类型在这里进行初始化时才会被推断出来
