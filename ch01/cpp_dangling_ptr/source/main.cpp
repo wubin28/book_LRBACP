@@ -11,9 +11,9 @@ int main()
   int* rawPtr = nullptr;
 
   {  // 开始一个新的作用域，用于限定smartPtr的生存期
-    // 创建智能指针smartPtr，指向一个值为42的int对象，
+    // 创建智能指针smartPtr，指向一个值为55的int对象，
     // std::指的是shared_ptr是C++标准库中提供的智能指针
-    std::shared_ptr<int> smartPtr = std::make_shared<int>(42);
+    std::shared_ptr<int> smartPtr = std::make_shared<int>(55);
     rawPtr = smartPtr.get();  // 获取智能指针所管理的裸指针
 
     std::cout << "智能指针管理的值: " << *smartPtr << std::endl;
@@ -29,6 +29,6 @@ int main()
 }
 // 运行输出:
 // C++ 悬垂指针示例开始运行...
-// 智能指针管理的值: 42
-// 裸指针指向的值: 42
+// 智能指针管理的值: 55
+// 裸指针指向的值: 55
 // 尝试访问悬垂裸指针的值: 0
