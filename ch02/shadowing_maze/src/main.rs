@@ -1,14 +1,14 @@
 fn main() {
     let value = 55;
-    println!("初始 value: {}", value);
+    println!("value: {}", value);
 
     let value = value.to_string();
-    println!("遮蔽后的 value: {}", value);
+    println!("value: {}", value);
 
     let value = value.len();
-    println!("再次遮蔽后的 value 长度: {}", value);
+    println!("value: {}", value);
 }
-// 输出：
-// 初始 value: 55
-// 遮蔽后的 value: 55
-// 再次遮蔽后的 value 长度: 2
+// 运行输出：
+// value: 55
+// value: 55
+// value: 2
