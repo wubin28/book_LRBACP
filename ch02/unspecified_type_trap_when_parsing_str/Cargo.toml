@@ -1,0 +1,6 @@
+[package]
+name = "unspecified_type_trap_when_parsing_str"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
