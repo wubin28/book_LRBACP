@@ -1,0 +1,6 @@
+[package]
+name = "default_inferred_types_for_int_and_float"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
