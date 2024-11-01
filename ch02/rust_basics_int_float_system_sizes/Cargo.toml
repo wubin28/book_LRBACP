@@ -1,6 +1,0 @@
-[package]
-name = "rust_basics_integer_float_system_sizes"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
