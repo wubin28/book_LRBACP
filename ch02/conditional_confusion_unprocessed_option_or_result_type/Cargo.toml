@@ -1,6 +1,0 @@
-[package]
-name = "conditional_confusion_unprocessed_option_or_result_type"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
