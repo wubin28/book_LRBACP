@@ -1,0 +1,6 @@
+[package]
+name = "bind_value_of_non_default_inferred_type"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
