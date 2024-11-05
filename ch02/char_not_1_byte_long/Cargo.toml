@@ -1,0 +1,6 @@
+[package]
+name = "char_not_1_byte_long"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
