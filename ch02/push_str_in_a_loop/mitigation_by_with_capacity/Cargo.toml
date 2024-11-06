@@ -1,5 +1,5 @@
 [package]
-name = "mitigation"
+name = "mitigation_by_with_capacity"
 version = "0.1.0"
 edition = "2021"
 
